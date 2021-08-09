@@ -1,0 +1,58 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "blocks/timer";
+
+
+// Дополнительные стили
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%; //т.е. 10px от 16px (100%)
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4 px;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+mark {
+  background: $yellow;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-family: "Bebas Neue Regular";
+  font-size: 4.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+//Подключение шрифтов
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BebasNeueRegular.woff") format("woff"),
+    url("../fonts/BebasNeueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Blocks*/
+@import "blocks/container";
+@import "blocks/form";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/maraphone";
+@import "blocks/registration";

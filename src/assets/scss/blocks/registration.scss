@@ -1,0 +1,87 @@
+.registration {
+  margin: 0 auto;
+  padding: 5rem 0 0 0;
+  background: url(../images/bg-footer.png) bottom center no-repeat;
+
+  p {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+    font-family: "Bebas Neue Regular";
+  }
+
+  @include breakpoint($tablet-bp) {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.registration__inner {
+  display: flex;
+  min-height: 72rem;
+  align-items: center;
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+  }
+}
+
+.registration__announce {
+  display: flex;
+  flex-direction: column;
+  max-width: 656px;
+  width: 100%;
+  height: 523px;
+
+  p {
+    line-height: 115%;
+  }
+
+  @include breakpoint($tablet-bp) {
+    height: auto;
+  }
+}
+
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  max-width: 400px;
+  > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.registration__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.registration__logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+
+  &.clock {
+    background: url(../images/time.svg) center no-repeat;
+    background-size: contain;
+  }
+
+  &.online {
+    background: url(../images/online.svg) center no-repeat;
+    background-size: contain;
+
+  }
+}
+
+.registration__details {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+

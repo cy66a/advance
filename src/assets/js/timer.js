@@ -1,0 +1,30 @@
+jQuery(document).ready(function () {
+	jQuery(".timer").eTimer({
+		etType: 0,
+		etDate: "01.09.2021.0.0",
+		etTitleText: "До конца лета",
+		etTitleSize: 20,
+		etShowSign: 1,
+		etSep: ":",
+		etFontFamily: "Bebas Neue Regular",
+		etTextColor: "#545454",
+		etPaddingTB: 0,
+		etPaddingLR: 0,
+		// etBackground: "#333333",
+		etBorderSize: 0,
+		etBorderRadius: 2,
+		etBorderColor: "white",
+		// etShadow: " 0px 0px 10px 0px #333333",
+		etLastUnit: 3,
+		etNumberFontFamily: "ubuntu",
+		etNumberSize: 56,
+		etNumberColor: "white",
+		etNumberPaddingTB: 5,
+		etNumberPaddingLR: 0,
+		etNumberBackground: "#701DF7",
+		etNumberBorderSize: 0,
+		etNumberBorderRadius: 10,
+		etNumberBorderColor: "white",
+		// etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+	});
+});

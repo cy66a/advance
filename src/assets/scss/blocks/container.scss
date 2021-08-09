@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include breakpoint($tablet-bp) {
+    max-width: 46rem;
+    overflow: hidden;
+  }
+}
+  

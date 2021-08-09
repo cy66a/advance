@@ -1,0 +1,66 @@
+.maraphone {
+  margin: 0 auto;
+  padding: 10rem 0 0 0;
+  @include breakpoint($tablet-bp) {
+    padding: 0;
+  }
+
+}
+
+.maraphone__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  line-height: 1.2;
+  font-size: 1.6rem;
+  
+  h3 {
+    font-family: "Bebas Neue Regular";
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    
+    margin-bottom: 0.9rem;
+  }
+  
+  h4 {
+    margin: 1.5rem 0 .1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  time {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: $darkorange;
+  }
+
+}
+
+.card {
+  display: block;
+  background-color: $crystalwhite;
+  margin: 5rem 1.5rem;
+  border: 2px solid #fd6108;
+  border-radius: 25px;
+  padding: 3rem;
+  min-height: 562px;
+  @include breakpoint($tablet-bp) {
+    min-height: auto;
+  }
+}
+
+.none {
+  @include breakpoint($tablet-bp) {
+      display: none;
+    }
+  }
+
+.card__block {
+  margin-bottom: 2.2rem;
+}
